@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+nav.scrolled {
+    background: #000291;
+}
+
+
+nav img {
+    width: 45px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #910000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .bi {
+    display: none;
+}
+
+
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(21, 52, 163, 0.641)), url('img/gambarhome1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.text-box {
+    width: 60%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 22px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #910000;
+    background: #910000;
+    transition: 1s;
+}
+
+
+.tentang {
+    background-image: url('img/backgroundtentang.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.leftTentang {
+    flex: 1;
+}
+
+.leftTentang h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.leftTentang h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: #de2639;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.3;
+}
+
+
+.rightTentang {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightTentang img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.desc1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #de2638c4;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.tutorial-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-section h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.example {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.example h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.code-output {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.code-output {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .code {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    background-color: #2e2e2e; /* Background hitam */
+    color: #f8f8f2; /* Warna teks putih */
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .code pre {
+    margin: 0;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+  }
+
+.output iframe {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.example {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.example p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.code-example {
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+pre {
+    margin: 0;
+    font-family: monospace;
+    color: #d6336c;
+}
+
+.video-material {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-material h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .thumbnail-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .thumbnail {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .watch-instruction {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .tutorial-section h1 {
+    color: #000000; /* Warna dominan untuk CSS, misalnya biru */
+  }
+  
+  .example h2 {
+    color: #000000; /* Warna teks untuk heading setiap contoh */
+  }
+ 
+  .css-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .css-section h1 {
+    text-align: center;
+    color: #000000; 
+    margin-bottom: 1.5rem;
+  }
+  
+  .css-section .example {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .css-section .example h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .css-section .code-output {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .css-section .code {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    background-color: #1e1e1e; /* Latar hitam pekat */
+    color: #dcdcdc; /* Warna teks putih */
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+  
+  .css-section .output {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  
+  .css-section .output iframe {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .css-section .video-material {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .css-section .video-material h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .css-section .video-container .thumbnail {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .css-section .video-container .thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .css-section .video-container .watch-instruction {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .js-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .js-section h1 {
+    text-align: center;
+    color: #000000; 
+    margin-bottom: 1.5rem;
+  }
+  
+  .js-section .example {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .js-section .example h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .js-section .code-output {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .js-section .code {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    background-color: #1e1e1e; /* Latar hitam pekat */
+    color: #dcdcdc; /* Warna teks putih */
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+  
+  .js-section .output iframe {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #F4A261;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .js-section .video-material {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .js-section .video-container .thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .js-section .video-container .watch-instruction {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+.kontak {
+    background-color: #000291;
+    color: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #ffffff;
+}
+
+.kontak h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.kontak p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.kontak-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kontak-icons a {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.kontak-icons a:hover {
+    background-color: #000000;
+    color: #000291;
+}
+
+/* Footer */
+.footer {
+    background-color: #000291;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #000291;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .bi {
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .leftTentang,
+    .rightTentang {
+        width: 100%;
+    }
+
+    .leftTentang h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .leftTentang h3 {
+        font-size: 1.2rem;
+    }
+
+    .desc,
+    .desc1 {
+        font-size: 1rem;
+    }
+
+    .tutorial-section {
+        padding: 1rem;
+      }
+    
+      .example {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+      }
+    
+      .code-output {
+        flex-direction: column;
+      }
+    
+      .code,
+      .output {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    
+      iframe {
+        height: 200px; /* Tinggi iframe diatur ulang untuk layar kecil */
+      }
+    
+      .video-material {
+        margin-top: 1.5rem;
+      }
+    
+      .video-container {
+        gap: 0.5rem;
+      }
+    
+      .thumbnail {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+    
+      .watch-instruction {
+        font-size: 12px;
+      }
+
+      .css-section,
+      .js-section {
+        padding: 1rem;
+      }
+    
+      .css-section h1,
+      .js-section h1 {
+        font-size: 1.5rem;
+      }
+    
+      .css-section .example,
+      .js-section .example {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    
+      .css-section .example h2,
+      .js-section .example h2 {
+        font-size: 1.2rem;
+      }
+    
+      .css-section .code-output,
+      .js-section .code-output {
+        flex-direction: column; /* Ubah tata letak menjadi kolom */
+      }
+    
+      .css-section .code,
+      .js-section .code,
+      .css-section .output,
+      .js-section .output {
+        flex: 1 1 100%; /* Set lebar penuh */
+        max-width: 100%;
+        margin-bottom: 1rem; /* Tambahkan jarak antar elemen */
+      }
+    
+      .css-section .output iframe,
+      .js-section .output iframe {
+        height: 200px; /* Perbesar tinggi iframe untuk perangkat kecil */
+      }
+    
+      .css-section .video-container .thumbnail,
+      .js-section .video-container .thumbnail {
+        max-width: 100%;
+        margin: 0 auto; /* Tengahkan gambar thumbnail */
+      }
+    
+      .css-section .video-container .watch-instruction,
+      .js-section .video-container .watch-instruction {
+        font-size: 12px; /* Perkecil teks */
+        text-align: center;
+      }
+
+    .kontak h2 {
+        font-size: 2rem;
+    }
+
+    .kontak p {
+        font-size: 1rem;
+    }
+
+    .kontak-icons {
+        gap: 0.5rem;
+    }
+}

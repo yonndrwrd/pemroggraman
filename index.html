@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Pemrograman</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <section class="header" id="index.html">
+    <nav class="navbar">
+      <a href="index.html"><img src="img/logosmasa.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#index.html">BERANDA</a></li>
+          <li><a href="#tentang">TENTANG PEMROGRAMAN</a></li>
+          <li><a href="#tutorial-section">HTML</a></li>
+          <li><a href="#css-section">CSS</a></li>
+          <li><a href="#js-section">JAVA SCRIPT</a></li>
+          <li><a href="#kontak">KONTAK</a></li>
+        </ul>
+      </div>
+      <i class="bi bi-list" onclick="showMenu()"></i>
+    </nav>
+  </section>
+    
+    <section class="hero-section">
+      <div class="text-box">
+        <h1>Menciptakan Generasi Cerdas Melalui Bahasa Pemrograman</h1>
+        <p>
+          Dengan bahasa pemrograman yang baik, kita dapat menguasai teknologi digital
+        </p>
+        <a href="#tentang" class="hero-btn">Jelajahi</a>
+      </div>
+    </section>
+  
+
+    <section class="tentang" id="tentang">
+      <div class="content">
+        <div class="leftTentang">
+          <h2 data-aos="fade-down-right">Tentang Pemrograman</h2>
+          <p class="desc" data-aos="fade-down-right">
+            Pemrograman adalah proses menulis instruksi atau kode untuk memberi tahu komputer cara menjalankan tugas-tugas tertentu. 
+            Bahasa pemrograman memungkinkan pengembang untuk berkomunikasi dengan komputer dalam bentuk yang dapat dipahami oleh mesin.
+             Dengan pemrograman, kita bisa menciptakan berbagai aplikasi, situs web, sistem operasi, dan perangkat lunak lainnya.
+          </p>
+          <h3 data-aos="fade-down-right">Bahasa apa saja yang dipakai?</h3>
+          <p class="desc1" data-aos="fade-down-right">
+            Ada banyak bahasa pemrograman, masing-masing dengan tujuan dan kelebihannya sendiri, seperti:
+
+            HTML, CSS, dan JavaScript: Kombinasi ini banyak digunakan untuk pengembangan web. HTML mengatur struktur halaman web, CSS mengatur tampilan, dan JavaScript menambah interaktivitas.
+            Python: Bahasa serbaguna yang sering digunakan untuk pengembangan aplikasi, analisis data, kecerdasan buatan, dan pembelajaran mesin.
+            Java: Populer untuk pengembangan aplikasi Android, juga digunakan dalam pengembangan aplikasi yang skalanya besar.
+            C dan C++: Dipakai dalam pemrograman sistem, perangkat lunak yang membutuhkan performa tinggi, serta pengembangan game.
+            SQL: Bahasa yang digunakan untuk manajemen basis data, memungkinkan kita untuk menyimpan, mengelola, dan mengambil data."
+          </p>
+        </div>
+        <div class="rightTentang" data-aos="fade-down-left">
+          <img src="img/gambarhome.jpg" alt="Dokumentasi Belajar" />
+        </div>
+      </div>
+    </section>
+
+    <section class="tutorial-section" id="tutorial-section">
+      <h1 data-aos="fade-down">Belajar HTML</h1>
+    
+      <!-- Contoh 1: Hello World -->
+      <div class="example" data-aos="fade-down">
+        <h2>1. Menulis "Hello, World!"</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;h1&gt;Hello, World!&lt;/h1&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 2: Membuat Tabel -->
+      <div class="example" data-aos="fade-down">
+        <h2>2. Membuat Tabel</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;table border="1"&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dimas&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;table border='1'&gt;&lt;tr&gt;&lt;th&gt;Nama&lt;/th&gt;&lt;th&gt;Umur&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Dimas&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 3: List dan Navbar -->
+      <div class="example" data-aos="fade-down">
+        <h2>3. Penggunaan List dan Navbar</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;ul&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+      &lt;li&gt;CSS&lt;/li&gt;
+      &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;nav&gt;
+      &lt;a href="#"&gt;Home&lt;/a&gt; | &lt;a href="#"&gt;About&lt;/a&gt; | &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;ul&gt;&lt;li&gt;HTML&lt;/li&gt;&lt;li&gt;CSS&lt;/li&gt;&lt;li&gt;JavaScript&lt;/li&gt;&lt;/ul&gt;&lt;nav&gt;&lt;a href='#'&gt;Home&lt;/a&gt; | &lt;a href='#'&gt;About&lt;/a&gt; | &lt;a href='#'&gt;Contact&lt;/a&gt;&lt;/nav&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="video-material" data-aos="fade-down">
+        <h2>Materi Lengkap HTML</h2>
+        <div class="video-container">
+          <a href="https://youtu.be/hMDJyb7VkYw?si=04i2mZnzCVS7x_TT" target="_blank" class="thumbnail-link">
+            <img src="img/contohhtml1.jpg" alt="Thumbnail Video" class="thumbnail">
+            <p class="watch-instruction">Klik gambar untuk menonton video!</p>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    
+
+    <section class="css-section" id="css-section">
+      <h1 data-aos="fade-up">Belajar CSS</h1>
+    
+      <!-- Contoh 1: Mengubah Warna Teks -->
+      <div class="example" data-aos="fade-up">
+        <h2>1. Mengubah Warna Teks</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;style&gt;
+          h1 {
+            color: blue;
+          }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Teks Berwarna Biru&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;style&gt;h1 { color: blue; }&lt;/style&gt;&lt;h1&gt;Teks Berwarna Biru&lt;/h1&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 2: Menambahkan Border -->
+      <div class="example" data-aos="fade-up">
+        <h2>2. Menambahkan Border</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;style&gt;
+          div {
+            border: 2px solid black;
+            padding: 10px;
+          }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;div&gt;Ini adalah kotak dengan border&lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;style&gt;div { border: 2px solid black; padding: 10px; }&lt;/style&gt;&lt;div&gt;Ini adalah kotak dengan border&lt;/div&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 3: Mengubah Background -->
+      <div class="example" data-aos="fade-up">
+        <h2>3. Mengubah Background</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;style&gt;
+          body {
+            background-color: lightgray;
+          }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Halaman dengan Background Abu-Abu&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;style&gt;body { background-color: lightgray; }&lt;/style&gt;&lt;h1&gt;Halaman dengan Background Abu-Abu&lt;/h1&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Video dan Thumbnail -->
+      <div class="video-material" data-aos="fade-up">
+        <h2>Materi Lengkap CSS</h2>
+        <div class="video-container">
+          <a href="https://www.youtube.com/watch?v=example-css" target="_blank" class="thumbnail-link">
+            <img src="img/contohcss.jpg" alt="Thumbnail Video CSS" class="thumbnail">
+            <p class="watch-instruction">Klik gambar untuk menonton video!</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section class="js-section" id="js-section" data-aos="zoom-in">
+      <h1>Belajar JavaScript</h1>
+    
+      <!-- Contoh 1: Menampilkan Pesan dengan Alert -->
+      <div class="example" data-aos="zoom-in">
+        <h2>1. Menampilkan Pesan dengan Alert</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Contoh Alert&lt;/title&gt;
+        &lt;script&gt;
+          function showMessage() {
+            alert('Halo, ini pesan dari JavaScript!');
+          }
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;button onclick="showMessage()"&gt;Klik Saya&lt;/button&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;script&gt;function showMessage() { alert('Halo, ini pesan dari JavaScript!'); }&lt;/script&gt;&lt;button onclick='showMessage()'&gt;Klik Saya&lt;/button&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 2: Menampilkan Teks di Halaman -->
+      <div class="example" data-aos="zoom-in">
+        <h2>2. Menampilkan Teks di Halaman</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Contoh Menampilkan Teks&lt;/title&gt;
+        &lt;script&gt;
+          function displayText() {
+            document.getElementById('output').innerText = 'Halo, ini teks dari JavaScript!';
+          }
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;button onclick="displayText()"&gt;Tampilkan Teks&lt;/button&gt;
+        &lt;div id="output" style="margin-top: 10px;"&gt;&lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output">
+            <iframe srcdoc="&lt;script&gt;function displayText() { document.getElementById('output').innerText = 'Halo, ini teks dari JavaScript!'; }&lt;/script&gt;&lt;button onclick='displayText()'&gt;Tampilkan Teks&lt;/button&gt;&lt;div id='output' style='margin-top: 10px;'&gt;&lt;/div&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Contoh 3: Perhitungan Sederhana -->
+      <div class="example" data-aos="zoom-in">
+        <h2>3. Perhitungan Sederhana</h2>
+        <div class="code-output">
+          <div class="code">
+            <pre>
+              <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Contoh Perhitungan&lt;/title&gt;
+        &lt;script&gt;
+          function calculateSum() {
+            var a = 5;
+            var b = 3;
+            var sum = a + b;
+            document.getElementById('result').innerText = 'Hasil: ' + sum;
+          }
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;button onclick="calculateSum()"&gt;Hitung 5 + 3&lt;/button&gt;
+        &lt;div id="result" style="margin-top: 10px;"&gt;&lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="output" data-aos="zoom-in">
+            <iframe srcdoc="&lt;script&gt;function calculateSum() { var a = 5; var b = 3; var sum = a + b; document.getElementById('result').innerText = 'Hasil: ' + sum; }&lt;/script&gt;&lt;button onclick='calculateSum()'&gt;Hitung 5 + 3&lt;/button&gt;&lt;div id='result' style='margin-top: 10px;'&gt;&lt;/div&gt;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Video dan Thumbnail -->
+      <div class="video-material" data-aos="zoom-in">
+        <h2>Materi Lengkap JavaScript</h2>
+        <div class="video-container">
+          <a href="https://youtu.be/SDROba_M42g?si=0r2ZtErsiXDKAsZQ" target="_blank" class="thumbnail-link">
+            <img src="img/contohjs.jpg" alt="Thumbnail Video JavaScript" class="thumbnail">
+            <p class="watch-instruction">Klik gambar untuk menonton video!</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="kontak" id="kontak" data-aos="zoom-in">
+      <div class="kontak-intro">
+        <h2>Kontak</h2>
+        <p>
+          Jika Anda ingin menghubungi saya sebagai pembuat website atau ingin
+          mengetahui lebih lanjut, jangan ragu untuk menghubungi melalui
+          platform berikut:
+        </p>
+      </div>
+
+      <div class="kontak-icons">
+        <a
+          href="https://wa.me/6282150775570"
+          target="_blank"
+          class="btn btn-outline-light"
+        >
+          <i class="bi bi-whatsapp"></i> Dimas Pangestu Ramadhan And Yonathan Edward Simbolon
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        &copy; 2024 Website by Dimas Pangestu Ramadhan and Yonathan Edward Simbolon. All rights reserved.
+      </p>
+    </footer>
+
+    <!---Javascript untuk toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function() {
+          var navbar = document.querySelector("nav");
+          if (window.scrollY > 50) { 
+              navbar.classList.add("scrolled"); 
+          } else {
+              navbar.classList.remove("scrolled"); 
+          }
+      });
+  </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
